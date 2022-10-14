@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+@layer base {
+  body {
+    @apply font-['Comfortaa'];
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+
+
+  .screenSettings {
+    @apply text-gray-300;
+    @apply bg-[#12093a];
+    @apply w-full;
+    @apply h-screen;
+  }
+  .buttonHover {
+    @apply flex border-[2px] border-[#eeeeee] hover:bg-[#7c1010] hover:border-[#7c1010] p-2 my-3 items-center;
+  }
+}
+
+@layer components {
+  .bigText {
+    @apply sm:text-5xl !important;
+    @apply border-b-4;
+    @apply inline;
+    @apply font-bold;
+    @apply border-[#7c1010];
+    @apply text-2xl;
+  }
+}
